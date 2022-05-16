@@ -1,0 +1,43 @@
+import java.util.Scanner;
+public class Calculator {
+		
+	public static void main(String[]args) {
+	System.out.println("Enter the value for the first number");
+	Scanner scan= new Scanner(System.in);
+	int firstNo= scan.nextInt();
+	
+	System.out.println("Enter the value for the second number");
+	int secondNo= scan.nextInt();
+	
+	System.out.println("Select on operation to perform;");
+	System.out.println("1.Sum");
+	System.out.println("2.Subtraction");
+	System.out.println("3.Multiplication");
+	System.out.println("4.Division");
+	
+	int Opp= scan.nextInt();
+	switch(Opp) {
+ 
+	case 1:
+	int sum = firstNo + secondNo;
+	System.out.println("The sum of the two numbers is " + sum);
+	break;
+	case 2:
+		int Sub= firstNo - secondNo;
+		System.out.println("The difference of the two numbers is " + Sub);
+		break;
+	case 3:
+		int Mul = firstNo *secondNo;
+		System.out.println("The multiplication of the two numbers is " + Mul);
+		break;
+	case 4:
+		int div = firstNo / secondNo;
+		System.out.println("The division of the two numbers is "+ div);
+		break;
+		default:
+			System.out.println("Syntax Error!!");
+
+	}
+	
+	}
+}
